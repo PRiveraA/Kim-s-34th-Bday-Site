@@ -1,4 +1,10 @@
 body {
+  background-color: #232323;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
   display: flex;
   flex-direction: column;
   font-family: 'Montserrat', sans-serif;
@@ -7,6 +13,8 @@ body {
   padding: 50px;
   padding-top: 25px;
   justify-content: center;
+  align-items: center;
+  border-radius: 8px;
 }
 
 h1 {
@@ -68,5 +76,11 @@ img {
   text-align: center;
   object-fit: cover;
   height: 200px;
+  width: 312px;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
   width: 312px;
 }

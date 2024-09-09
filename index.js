@@ -30,16 +30,13 @@ playButton.addEventListener('click', function () {
   if (audio.paused) {
     audio.play();
     playButton.textContent = "Press to make it stop!";  // Change button text to "Stop Audio"
-    console.log('Birthday song is playing.');
   } else {
     audio.pause();
     playButton.textContent = "Press for Birthday Song!";  // Change button text back to "Play Birthday Song"
-    console.log('Birthday song is paused.');
   }
 });
 
 // Reset button text when audio ends
 audio.addEventListener('ended', function () {
   playButton.textContent = "Press for Birthday Song!";  // Reset button text after audio ends
-  console.log('Birthday song has ended.');
 });
