@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kim's 34th Birthday</title>
+  <link href="styles.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+</head>
+
+<body>
+  <h1>Happy Birthday, [Friend's Name]!</h1>
+  <p>Wishing you a day filled with joy, love, and all the things you cherish!</p>
+  <button id="confetti-button">Press to Confetti Yourself</button>
+
+  <script>
+    // Initialize jsConfetti instance
+    const jsConfetti = new JSConfetti();
+
+    // Function to trigger confetti
+    function triggerConfetti() {
+      jsConfetti.addConfetti({
+        emojis: ['❤️', '🦄', '🧜‍♀️', '☘️', '🫐', '🥳'],
+        confettiColors: ['#ff0a54', '#ff477e', '#ff7096', '#ff85a1', '#fbb1bd', '#f9bec7'],
+        confettiRadius: 9,
+        confettiNumber: 100,
+        emojiSize: 100
+      });
+    }
+
+    // Add event listener to button
+    document.getElementById('confetti-button').addEventListener('click', triggerConfetti);
+
+    // Trigger confetti when the page fully loads
+    window.addEventListener('load', function () {
+      console.log('Page fully loaded. Triggering confetti...');
+      triggerConfetti();
+    });
+  </script>
+</body>
+
+</html>
