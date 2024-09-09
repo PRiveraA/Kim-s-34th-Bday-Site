@@ -6,10 +6,11 @@ function triggerConfetti() {
   jsConfetti.addConfetti({
     emojis: ['❤️', '🦄', '🧜‍♀️', '☘️', '🫐', '🥳'],
     confettiColors: ['#ff0a54', '#ff477e', '#ff7096', '#ff85a1', '#fbb1bd', '#f9bec7'],
-    confettiRadius: 9,
+    confettiRadius: 6,
     confettiNumber: 100,
     emojiSize: 100
   });
+  console.log('Confetti triggered!');
 }
 
 // Add event listener to button
