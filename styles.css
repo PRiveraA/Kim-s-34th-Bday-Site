@@ -37,12 +37,15 @@ p {
   font-size: 1.5rem;
   color: #8f8f8f;
   text-align: left;
+  margin-bottom: 0rem;
 }
 
 .p-3 {
   font-size: 1.5rem;
   color: #8f8f8f;
-  text-align: right;
+  text-align: left;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
 }
 
 button {
