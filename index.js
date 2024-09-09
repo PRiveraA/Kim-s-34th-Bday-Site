@@ -10,7 +10,6 @@ function triggerConfetti() {
     confettiNumber: 100,
     emojiSize: 100
   });
-  console.log('Confetti triggered!');
 }
 
 // Add event listener to button
@@ -18,7 +17,6 @@ document.getElementById('confetti-button').addEventListener('click', triggerConf
 
 // Trigger confetti when the page fully loads
 window.addEventListener('load', function () {
-  console.log('Page fully loaded. Triggering confetti...');
   triggerConfetti();
 });
 
