@@ -12,24 +12,18 @@ function triggerConfetti() {
   });
 }
 
-// Add event listener to button
-document.getElementById('confetti-button').addEventListener('click', triggerConfetti);
-
-// Trigger confetti when the page fully loads
-window.addEventListener('load', function () {
-  triggerConfetti();
-});
-
-// Toggle audio play/pause and update button text
+// Get the button and audio elements by their IDs
 const playButton = document.getElementById('play-audio-button');
 const audio = document.getElementById('birthday-audio');
 
+// Toggle audio play/pause and update button text
 playButton.addEventListener('click', function () {
   if (audio.paused) {
-    audio.play();
+    audio.play();  // Play the audio
     playButton.textContent = "Press to make it stop!";  // Change button text to "Stop Audio"
   } else {
-    audio.pause();
+    audio.pause();  // Pause the audio
+    audio.currentTime = 0;  // Reset the audio to the beginning
     playButton.textContent = "Press for Birthday Song!";  // Change button text back to "Play Birthday Song"
   }
 });
