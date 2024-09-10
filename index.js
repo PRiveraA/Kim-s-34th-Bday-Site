@@ -39,7 +39,7 @@ playButton.addEventListener('click', function () {
 
 // Listen for the timeupdate event to check when the audio hits the 33-second mark
 audio.addEventListener('timeupdate', function () {
-  if (audio.currentTime >= 32 && !confettiTriggered) {
+  if (audio.currentTime >= 32.2 && !confettiTriggered) {
     triggerConfetti();  // Trigger confetti at 33 seconds
     confettiTriggered = true;  // Prevent it from triggering again in the same play
   }
