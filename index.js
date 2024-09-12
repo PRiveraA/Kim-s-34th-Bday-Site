@@ -50,11 +50,3 @@ audio.addEventListener('ended', function () {
   playButton.textContent = "Press for Birthday Song!";  // Reset button text after audio ends
   confettiTriggered = false;  // Reset confetti trigger for next play
 });
-
-// Add a new button to trigger confetti manually
-const confettiButton = document.getElementById('confetti-button'); // Assuming you have a button with this ID
-
-confettiButton.addEventListener('click', function () {
-  triggerConfetti();  // Trigger confetti on button click
-});
-
